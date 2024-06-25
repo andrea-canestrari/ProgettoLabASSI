@@ -1,0 +1,29 @@
+1. L'utente deve essere in grado di scegliere la sua squadra preferita e di visualizzare principalmente le informazioni su di essa.
+2. L'utente deve essere in grado di comprare magliette e altri elementi di merchandising su tutte le squadre disponibili.
+3. L'utente deve essere in grado di filtrare tali elementi in base a diversi criteri, come il prezzo, taglia ecc..
+4. L'utente deve essere in grado di visualizzare le rose di tutte le squadre in gara all'Europeo.
+5. L'utente deve essere in grado di una serie di informazioni generali su tutte le nazioni in gara.
+6. L'utente deve essere in grado di poter inviare messaggi ad altri utenti.
+7. L'utente deve essere in grado di giocare contro il computer a memory o tris, i quali saranno a tema Europei.
+8. L'utente deve essere in grado di segnalare eventuali errori presenti o suggerire nuove idee.
+9. L'utente deve essere in grado di registrarsi tramite i principali social network.
+10. L'utente deve essere in grado di aprire delle discussioni e partecipare ad altre, interagendo con gli altri utenti.
+11. L'utente deve essere in grado di visualizzare e gestire la lista degli utenti "amici".
+12. L'utente deve essere in grado di inviare richieste di amicizia ad altri utenti.
+13. L'utente deve essere in grado di modificare la squadra preferita scelta.
+14. L'utente deve essere in grado di modificare le altre informazioni che caratterizzano il profilo.
+15. L'utente deve ricevere una notifica ogni qualvolta un'altro utente interagisce con una discussione aperta dal primo.
+16. L'utente deve essere in grado di ricevere informazioni su diversi siti riguardanti le quote delle principali partite.
+17. Se l'utente è particolarmente attivo, deve avere una coccarda accanto al suo nome.
+18. Gli account devono essere di due tipi: utenti senza privilegi di amministratore ed utenti con privilegi di amministratore.
+19. Gli account admin devono avere la facoltà di visualizzare tutti gli account senza privilegi di amministratore.
+20. Gli account admin possono cancellare account rei di comportamento scorretto.
+21. L'utente deve essere in grado di recuperare la propria email e la propria password.
+22. L'utente deve essere in grado di registrarsi anche sul sito.
+23. L'utente deve essere in grado di visualizzare le statistiche sulle varie squadre dell'Europeo.
+24. L'utente deve essere in grado di visualizzare le statistiche relative alle partite giocate a memory o tris contro il computer.
+25. L'utente deve essere in grado di accedere alla cronologia relativa al merchandising cercato.
+26. L'utente deve essere in grado di visualizzare gli item acquistati.
+27. L'utente deve essere in grado di cancellare il proprio account.
+28. L'utente deve essere in grado di ricevere notifiche se sono presenti offerte relative ad oggetti sulla squadra preferita.
+29. L'utente deve essere in grado di vedere una serie di informazioni generali sui singoli giocatori presenti all'Europeo.
