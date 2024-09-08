@@ -1,0 +1,33 @@
+Software usati:
+1) TailwindCSS, usato per design.
+2) Hotwire, w/Stimulus and Turbo, usato per front-end framework (JavaScript).
+3) Devise, usato per autenticazione.
+4) PostgreSQL, usato per database.
+5) Stripe, usato per pagamenti.
+6) Chart.js, usato per grafici.
+7) Pagy, usato per paginazione.
+
+Creazione admin account:
+Email: admin@example.com
+Password: password
+
+Creazione categorie:
+rails g scaffold admin::category name:string description:text
+
+Creazione prodotti:
+rails g scaffold admin::product name:string description:text price:integer category:references active:boolean
+
+Creazione stocks:
+rails g scaffold admin::stock product:references amount:integer size:string
+
+Creazione ordini:
+rails g scaffold admin::order email:string completed:boolean total:integer address:string 
+
+Creazione elemento che lega ordini con prodotto:
+rails g model OrderProduct product:references order:references
+
+Creazione controllore prodotti:
+rails g stimulus products
+
+Creazione controllore carrello:
+rails g stimulus cart

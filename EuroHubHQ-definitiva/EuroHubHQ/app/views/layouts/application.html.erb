@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EuroHubHQ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'pagy.css' %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload", media: "all" %>
+    <%= javascript_importmap_tags %>
+
+  <%= yield :head %>
+
+  </head>
+
+  <body>
+    <%= render "shared/navbar" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
+      <%= yield %>
+    
+    <%= render "shared/footer" %>
+  </body>
+</html>

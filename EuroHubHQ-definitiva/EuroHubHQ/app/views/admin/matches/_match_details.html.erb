@@ -1,0 +1,38 @@
+<div class="match-container bg-cover bg-center p-6">
+  <div class="grid grid-cols-3 gap-4">
+
+    <!-- Flag and Caution for Team 1 -->
+    <div class="space-y-4">
+      <div class="bg-red bg-opacity-80 p-4  text-center">
+        <%= image_tag "#{admin_match.team1}.png", alt: "Bandiera di #{admin_match.team1}", class: "h-15 w-20 mx-auto" %>
+      </div>
+      <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow-lg text-center">
+        <p class="font-bold"><span>Marker:</span><%= match.marker1 %></p>
+        <p><%= admin_match.caution1 %></p>
+      </div>
+    </div>
+
+    <!-- Team Names, Scores, and Details -->
+    <div class="space-y-4 col-span-1 flex flex-col items-center justify-center">
+      <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow-lg text-center">
+        <p class="font-bold"><%= admin_match.team1 %> vs <%= admin_match.team2 %></p>
+        <p>Score: <%= admin_match.score1 %> - <%= admin_match.score2 %></p>
+      </div>
+      <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow-lg text-center">
+        <p><%= admin_match.details %></p>
+      </div>
+    </div>
+
+    <!-- Flag and Caution for Team 2 -->
+    <div class="space-y-4">
+      <div class="bg-white bg-opacity-80 p-4  text-center">
+        <%= image_tag "#{admin_match.team2}.png", alt: "Bandiera di #{admin_match.team2}", class: "h-15 w-20 mx-auto" %>
+      </div>
+      <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow-lg text-center">
+        <p class="font-bold"><span>Marker:</span><%= admin_match.marker2 %></p>
+        <p><%= admin_match.caution2 %></p>
+      </div>
+    </div>
+
+  </div>
+</div>

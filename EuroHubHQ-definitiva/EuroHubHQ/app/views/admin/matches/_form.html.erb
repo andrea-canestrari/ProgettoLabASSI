@@ -1,0 +1,64 @@
+<% team_options = ['Albania','Austria','Belgium','Croatia','Czechia','Denmark','England','France','Georgia','Germany','Hungary','Italy', 'Netherlands','Poland','Portugal','Romania','Scotland','Serbia','Slovakia','Slovenia','Spain', 'Switzerland','Turkey','Ukraine'] %>
+
+<%= form_with(model: admin_match, class: "contents") do |form| %>
+  <% if admin_match.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(admin_match.errors.count, "error") %> prohibited this match from being saved:</h2>
+      <ul>
+        <% admin_match.errors.full_messages.each do |error| %>
+          <li><%= error%></li>
+        <% end %>
+      </ul>
+    </div>
+     <p><%= debug(admin_match.errors) %></p> <!-- Aggiungi questa linea per vedere gli errori in debug -->
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :team1,"Home team" %>
+    <%= form.select :team1,options_for_select(team_options), {}, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :team2,"Away team" %>
+    <%= form.select :team2,options_for_select(team_options), {}, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :score1 %>
+    <%= form.number_field :score1, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :score2 %>
+    <%= form.number_field :score2, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :marker1 %>
+    <%= form.text_field :marker1, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :marker2 %>
+    <%= form.text_field :marker2, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :details %>
+    <%= form.text_field :details, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :caution1 %>
+    <%= form.text_field :caution1, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :caution2 %>
+    <%= form.text_field :caution2, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
