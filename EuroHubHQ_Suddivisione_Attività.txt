@@ -1,0 +1,3 @@
+Canestrari Andrea: Gestione negozio + Pagamenti Stripe + Piattaforma Admin/Utente
+Caldarini Daniele: Gestione partite + Gestione design
+Pierfrancesco Emiliani: Gestione autenticazione + Gestione test
